@@ -1,0 +1,23 @@
+For image search
+
+Use google custom search - with my own api
+
+My search engine
+https://cse.google.com/cse/setup/basic?cx=015442808760036436136:sbdsxirnsiy
+
+My API
+https://console.developers.google.com/project/striking-loop-102520/apiui/credential#
+
+Blog
+http://googlecode.blogspot.ch/2012/02/image-results-now-available-from-custom.html
+
+This code works:
+https://www.googleapis.com/customsearch/v1?q=titian&key=AIzaSyDDCEIWAf_ryCpO-pyKiQpRhBT_DtS6QmY&cx=015442808760036436136:sbdsxirnsiy
+
+https://www.googleapis.com/customsearch/v1?q=titian&key=AIzaSyDDCEIWAf_ryCpO-pyKiQpRhBT_DtS6QmY&cx=015442808760036436136:sbdsxirnsiy&searchType=image&fileType=jpg&imgSize=large&alt=json
+
+ToDo:
+Add more museums to search
+Write python code to grab a random result (on link)
+Build a dictionary of all great painters - and have my python code take one randomly (for db.artist in name)
+

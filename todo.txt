@@ -1,0 +1,18 @@
+
+Now use S3 for data store and Wordpress for blog
+From Wordpress - then add a link to Tumblr
+
+Library for s3
+Library for Wordpress
+
+Save artist name
+Finish processing
+Rename files (with artist and hour/date )
+Upload all files to s3
+Create word press post - using all three files AND the artist default_flow_style
+
+Finish
+
+
+Clean up
+Put all private keys in yaml
