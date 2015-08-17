@@ -1,18 +1,23 @@
 
-Now use S3 for data store and Wordpress for blog
-From Wordpress - then add a link to Tumblr
+Clean up - 
+Need to clean up the html - I am hard-coding the image size and placement - but need to do it dynamically
+Need to get a better title link - sometimes I am not getting the correct one
+HTML layout - need to get a better layout
+Need to not hard code the file location - add this to the yaml file
 
-Library for s3
 Library for Wordpress
-
 Save artist name
-Finish processing
-Rename files (with artist and hour/date )
-Upload all files to s3
-Create word press post - using all three files AND the artist default_flow_style
-
 Finish
 
 
 Clean up
+
+Done
+Now use S3 for data store and Wordpress for blog
+From Wordpress - then add a link to Tumblr
 Put all private keys in yaml
+Finish processing
+Rename files (with artist and hour/date )
+Upload all files to s3
+Create word press post - using all three files AND the artist default_flow_style
+Library for s3
