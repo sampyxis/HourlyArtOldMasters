@@ -12,6 +12,8 @@ import random
 from random import randrange
 import tinys3
 import datetime
+from time import sleep
+import shutil
 
 # Here are the email package modules we'll need
 from email.mime.image import MIMEImage
@@ -150,6 +152,7 @@ os.system("startProcessing.bat")
 #os.system("processing-java --sketch=" + processing_location + " --output=" + processing_location + "\HourlyArtBuild --force --run")
 #os.system("processing-java --sketch=" + processing_location + " --output=" + processing_location + "\HourlyArtBuild --force --run")
 print("Done with processing")
+sleep(10)
 
 print(os.getcwd())
 # rename the files
@@ -159,7 +162,8 @@ os.rename('newImage.jpg', ttime + '_image.jpg')
 # new
 os.rename('newImage.png', ttime + '_image.png')
 # gif
-os.rename('newImage.gif', ttime + '_image.gif')
+#os.rename('newImage.gif', ttime + '_image.gif')
+shutil.copyfile('newImage.gif', ttime + '_image.gif')
 
 # ok - have picture, name - now put it on S3
 # Creating a simple connection
@@ -195,16 +199,16 @@ postGif = imageTemplate + ttime + '_image.gif'
 tags = '#hourlyart #generative #generativeart #art #artistsontumblr'
 
 message_html = """
+The original:
+</br>
+<img src=""" + postOriginalImage + """ width="450" height="503" class="alignnone" />
+
 The transformed image:
 </br>
 <img src=""" + postNewImage + """ width="450" height="503" class="alignnone" />
 
 The transformation:
 [caption width="450" align="alignnone"]<img src=""" + postGif + """ width="450" height="503" alt="gif" class /> gif[/caption]
-
-The original:
-</br>
-<img src=""" + postOriginalImage + """ width="450" height="503" class="alignnone" />
 
 
 [tags """ + tags + """]
