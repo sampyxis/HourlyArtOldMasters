@@ -175,7 +175,7 @@ conn.upload(ttime + '_image.png',f,'hourlyart', public=True)
 f.close()
 
 f = open(ttime + '_image.jpg','rb')
-conn.upload(ttime + '_image.jpg',f,'hourlyart', public=True)
+#conn.upload(ttime + '_image.jpg',f,'hourlyart', public=True)
 f.close()
 
 # upload gif
@@ -201,7 +201,7 @@ tags = '#hourlyart #generative #generativeart #art #artistsontumblr'
 message_html = """
 The original:
 </br>
-<img src=""" + postOriginalImage + """ width="450" height="503" class="alignnone" />
+<img src=""" + image + """ width="450" height="503" class="alignnone" />
 
 The transformed image:
 </br>
