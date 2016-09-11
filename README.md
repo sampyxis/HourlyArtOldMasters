@@ -7,3 +7,7 @@ Original Image | Generative Image
 
 ![The process](https://s3.amazonaws.com/hourlyart/2015_11_26_19_06_29_image.gif )
 
+To do:
+* Setup a new server
+* Image compression on the gif
+* Redo the blog post output
